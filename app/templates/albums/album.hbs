@@ -1,0 +1,22 @@
+ <h3>
+    {{#link-to 'albums' class='btn btn-primary btn-sm'}}
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        Powrót do albumów
+    {{/link-to}}
+
+    Utwory z {{model.album.name}} ({{model.album.releaseYear}})
+
+    <div class="btn btn-sm pull-right {{if showOnlyFavorites 'btn-success' 'btn-default'}}"
+         {{action 'toggleFavoritesView'}}>
+        Widok ulubionych
+    </div>
+</h3>
+
+ <ul class="list-group">
+    {{#each tracks as |track|}}
+        {{track-list-item track=track
+                          toggleFavorite=(action 'toggleFavoriteTrack' track)}}
+    {{else}}
+        <li class="list-group-item">Brak utworów.</li>
+    {{/each}}
+</ul>

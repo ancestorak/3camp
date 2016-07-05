@@ -1,0 +1,8 @@
+ <ul class="list-group">
+    {{#each model as |album|}}
+        <li class="list-group-item list-item-clickable"  {{action 'showAlbum' album}}>
+            <span class="badge">{{album.tracks.length}}</span>
+            {{album.name}} - {{album.artist.name}}
+        </li>
+    {{/each}}
+</ul>

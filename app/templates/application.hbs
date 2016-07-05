@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>3camp Music</h1>
+    </div>
+
+    <ul class="nav nav-tabs">
+        <li>
+            {{#link-to 'artists'}}Artyści{{/link-to}}
+        </li>
+        <li>
+            {{#link-to 'albums'}}Albumy{{/link-to}}
+        </li>
+    </ul>
+
+    <div class="panel">
+        {{outlet}}
+    </div>
+</div>

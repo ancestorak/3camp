@@ -1,0 +1,27 @@
+{
+  "predef": [
+    "Promise",
+    "moment",
+    "$",
+    "Ember"
+  ],
+
+  // Environments
+  "browser": true,
+  "devel": true,
+
+  // Enforcing options
+  "curly": true,
+  "eqeqeq": true,
+  "esversion": 6,
+  "noarg": true,
+  "nonew": true,
+  "strict": "implied",
+  "unused": "vars",
+  "varstmt": true,
+
+  // Relaxing options
+  "laxbreak": true,
+  "plusplus": true,
+  "loopfunc": true
+}

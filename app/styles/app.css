@@ -1,0 +1,32 @@
+body {
+    font-size: 16px !important;
+}
+
+.nav-tabs {
+    font-size: 1.2em;
+}
+
+.nav-tabs > li > a.active {
+    border-top: 2px solid rgb(51, 122, 183);
+    z-index: 1;
+    outline: none;
+}
+
+.list-item-clickable:hover {
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
+
+.fav-button {
+    cursor: pointer;
+}
+
+.fav-button:before {
+    font-size: 16px;
+    content: "\e007";
+}
+
+.track.favorite > .fav-button:before {
+    content: "\e006";
+    color: green;
+}
